@@ -3,15 +3,13 @@ package com.madan.repository;
 import org.springframework.data.mongodb.repository.MongoRepository;
 import org.springframework.stereotype.Repository;
 
-import com.madan.model.User;
+import com.madan.model.BillDetails;
 
 @Repository 
-public interface UserRepository extends MongoRepository<User,
+public interface BillDetailsRepository extends MongoRepository<BillDetails,
   String> {
   
-	public User findByUserName(String userName);
-	public User findByEmail(String email);
-	
-  
+	public BillDetails findByUniqueServNum(String uniqueServNum);
+	  
   }
  

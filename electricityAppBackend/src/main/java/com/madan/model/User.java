@@ -17,8 +17,7 @@ public class User {
 	public String hintQuestion;
 	public String hintAnswer;
 	public String uniqueServNum;
-	public String issueCategory;
-	public String issueSubCategory;
+	
 
 	public User() {
 	}
@@ -103,28 +102,12 @@ public class User {
 		this.uniqueServNum = uniqueServNum;
 	}
 
-	public String getIssueCategory() {
-		return issueCategory;
-	}
-
-	public void setIssueCategory(String issueCategory) {
-		this.issueCategory = issueCategory;
-	}
-
-	public String getIssueSubCategory() {
-		return issueSubCategory;
-	}
-
-	public void setIssueSubCategory(String issueSubCategory) {
-		this.issueSubCategory = issueSubCategory;
-	}
-
 	@Override
 	public String toString() {
-		return "Customer [id=" + id + ", userName=" + userName + ", customerName=" + customerName + ", mobileNumber="
+		return "User [id=" + id + ", userName=" + userName + ", customerName=" + customerName + ", mobileNumber="
 				+ mobileNumber + ", email=" + email + ", address=" + address + ", password=" + password
 				+ ", hintQuestion=" + hintQuestion + ", hintAnswer=" + hintAnswer + ", uniqueServNum=" + uniqueServNum
-				+ ", issueCategory=" + issueCategory + ", issueSubCategory=" + issueSubCategory + "]";
+				+ "]";
 	}
 
 }

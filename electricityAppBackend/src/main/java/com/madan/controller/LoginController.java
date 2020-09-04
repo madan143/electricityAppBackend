@@ -19,7 +19,6 @@ import org.springframework.web.server.ResponseStatusException;
 import com.google.gson.Gson;
 import com.madan.constants.ApplicationConstants;
 import com.madan.exceptions.AuthenticationException;
-import com.madan.exceptions.RecordAlreadyExistException;
 import com.madan.exceptions.RecordNotFoundException;
 import com.madan.model.User;
 import com.madan.repository.UserRepository;
