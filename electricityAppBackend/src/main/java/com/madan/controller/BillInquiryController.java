@@ -35,13 +35,13 @@ public class BillInquiryController {
 
 	@PostMapping("/inquiry")
 	@CrossOrigin(origins = "http://localhost:4200")
-	public ResponseEntity<String> getBillDetails(@RequestBody BillDetails details) {
+	public ResponseEntity<String> getBillDetails(@RequestBody String uniqueSerNum) {
 		log.info("<===============getBillDetails() Method START=====================>");
 		Gson gson = null;
 		BillDetails existingBillDtls = null;
 		try {
 				gson = new Gson();
-				existingBillDtls = repository.findByUniqueServNum(details.getUniqueServNum());
+				existingBillDtls = repository.findByUniqueServNum(uniqueSerNum);
 				if(null==existingBillDtls) {
 					throw new RecordNotFoundException();
 				}
