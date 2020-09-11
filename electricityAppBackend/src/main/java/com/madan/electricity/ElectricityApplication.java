@@ -3,10 +3,13 @@ package com.madan.electricity;
 import org.springframework.boot.SpringApplication;
 import org.springframework.boot.autoconfigure.SpringBootApplication;
 import org.springframework.context.annotation.ComponentScan;
+import org.springframework.context.annotation.ComponentScans;
 import org.springframework.data.mongodb.repository.config.EnableMongoRepositories;
 
 @EnableMongoRepositories("com.madan.repository")
-@ComponentScan("com.madan.controller")
+@ComponentScans({ 
+    @ComponentScan(basePackages = "com.madan.controller")
+})
 @SpringBootApplication
 public class ElectricityApplication {
 	
