@@ -12,5 +12,6 @@ public class ElectricityApplication {
 	
 	public static void main(String[] args) {
 		SpringApplication.run(ElectricityApplication.class, args);
+		String password = "12345";
 	}
 }
